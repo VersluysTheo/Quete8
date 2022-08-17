@@ -25,7 +25,7 @@ session_start()
     }
 ?>
 </div>
-<div class="col-9"><a class="btn btn-dark btn-sm" href="index.php?form" role="button">Ajouter des données</a>
+    <div><a class="btn btn-dark btn-sm" href="index.php?form" role="button">Ajouter des données</a>
 <?php
     // POST côté droit
  if (isset($_GET['form'])){
@@ -41,7 +41,7 @@ session_start()
                 'taille' => $_POST['taille'],
                 'classe' => $_POST['type']
             ];
-            echo '<div class="alert alert-success" role="alert"><strong> Les Données ont bien été enregistrées.</div>';
+            echo '<div class=" col-12 alert alert-success" role="alert"><strong> Les Données ont bien été enregistrées.</div>';
             // var_dump($_SESSION['Table']);
 }   
     }
@@ -153,8 +153,7 @@ session_start()
 };
 ?>
 </div>
-
-
+</div>
 </div>
 </section>
 </body>
